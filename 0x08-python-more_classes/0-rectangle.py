@@ -3,6 +3,8 @@
 Defining an empty class Rectangle
 """
 
+
 class Rectangle:
-    """ Class representation of a Rectangle"""
+
+    """Representation of Rectangle"""
     pass
