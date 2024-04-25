@@ -3,4 +3,4 @@
 const fs = require('fs');
 const request = require('request');
 
-request(process.argv[1]).pipe(fs.createWriteStream(process.argv[3]));
+request(process.argv[2]).pipe(fs.createWriteStream(process.argv[3], { encoding: 'utf-8' }));
