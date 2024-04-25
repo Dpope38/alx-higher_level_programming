@@ -2,7 +2,7 @@
 
 const request = require('request');
 
-request(process.argv[1], function (error, response, body) {
+request(process.argv[2], function (error, response, body) {
   if (!error) {
     const todos = JSON.parse(body);
     let completed = {};
@@ -14,5 +14,6 @@ request(process.argv[1], function (error, response, body) {
       }
     });
     console.log(completed);
-  }
+  } else {
+      console.log(err);
 });
